@@ -1006,12 +1006,12 @@ Path _processDoughnutShape(
   canvas.drawPath(path1, paint!);
   if (hasBorder) {
     canvas.drawPath(path1,
-        borderPaint..color = Colors.grey.shade300.withValues(alpha: 0.5));
+        borderPaint..color = Colors.grey.shade300.withOpacity(0.5));
   }
   canvas.drawPath(path2, paint);
   if (hasBorder) {
     canvas.drawPath(path2,
-        borderPaint..color = Colors.grey.shade300.withValues(alpha: 0.5));
+        borderPaint..color = Colors.grey.shade300.withOpacity(0.5));
   }
 
   return path;
@@ -1064,7 +1064,7 @@ Path _processRadialBarShape(
           ..strokeWidth = borderPaint.strokeWidth);
 
     canvas.drawPath(path1,
-        borderPaint..color = Colors.grey.shade300.withValues(alpha: 0.5));
+        borderPaint..color = Colors.grey.shade300.withOpacity(0.5));
   }
 
   canvas.drawPath(path2, paint!);
